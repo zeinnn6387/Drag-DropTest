@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class DragDrop {
+public class DragDropTests {
 
     @BeforeAll
     static  void setup() {
@@ -23,7 +23,7 @@ public class DragDrop {
     }
 
     @Test
-    void DragDrop() {
+    void dragDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $(".example").shouldHave(text("Drag and Drop"));
         $("#column-a").dragAndDropTo("#column-b");
